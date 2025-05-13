@@ -1,0 +1,12 @@
+--  Roblox script
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+local placeId = game.PlaceId
+
+local function rejoinGame()
+    TeleportService:Teleport(placeId, player)
+end
+
+rejoinGame()
